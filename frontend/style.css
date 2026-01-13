@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #1a0b2e, #2d1b4e, #4a2c6d);
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  margin-top: 0;
+  opacity: 0.8;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin: 16px 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #8b5cf6;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #7c3aed;
+}
+
+/* Dark gray button when connected */
+button:disabled,
+button.connected {
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: default;
+}
+
+button:disabled:hover,
+button.connected:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.25);
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: left;
+}
+
+#address {
+  font-family: monospace;
+  font-size: 13px;
+  word-break: break-all;
+}
